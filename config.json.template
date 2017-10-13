@@ -17,11 +17,10 @@
     "range":[4,12],
     "plot_cols":[4,5,6,7],
 
-    "algorithms":["hdbscan"],
     "parameters":{
         "range": true,
         "min":[100,1000,100]
     },
 
-    "threads":16
+    "threads":8
 }
