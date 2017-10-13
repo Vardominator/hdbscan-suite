@@ -1,7 +1,6 @@
-# hdbscan-suite
+# HDBSCAN Suite
 
 ## TODOs
-* Provide config option to use either min samples or min cluster size params
 * Implement logging
 * Run on Xavier's machine with entire stable luteo dataset
 * Run with min samples = 100 to 1500 in steps of 100
@@ -9,4 +8,5 @@
 * Write install and usage instructions in README
 
 ## RANDOM NOTES
+* 
 * min_cluster_size must be greater than 1

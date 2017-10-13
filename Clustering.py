@@ -52,12 +52,6 @@ class HDBSCANSession(ClusteringSession):
         self.labels = hdb.fit_predict(data)
         self.n_clusters = len(set(self.labels)) - 1
         
-        sample_size = 0
-        if len(data) >= 20000:
-            sample_size = 20000
-        else:
-            sample_size = len(data)
-
         del hdb
         
         return {'n_clusters': self.n_clusters, 'labels': self.labels.tolist()}
