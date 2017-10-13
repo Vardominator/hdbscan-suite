@@ -245,6 +245,7 @@ ModelManifest.xml
 .fake/
 
 
+config.json
 data/
 RESULTS/
 TEST/
