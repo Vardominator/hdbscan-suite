@@ -65,6 +65,8 @@ for run in range(config['runs']):
         ','.join([str(p) for p in config['plot_cols']]),
         '-r',
         str(config['parameters']['range']),
+        '-o',
+        str(config['parameters']['option']),
         '-m',
         ','.join([str(x) for x in config['parameters']['min']]),
         '--datetime',

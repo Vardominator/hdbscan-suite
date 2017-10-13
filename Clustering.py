@@ -27,27 +27,28 @@ current_directory = ""
 
 # CLUSTERING INTERFACE
 class ClusteringSession(object):
-    def run(self, params, threads):
-        raise NotImplementedError
-    def save_results(self, location):
-        raise NotImplementedError
-    def save_plots(self, location):
+    def run(self, option, params, threads):
         raise NotImplementedError
 
 # HDBSCAN
 class HDBSCANSession(ClusteringSession):
     def __init__(self):
         self.labels = []
-        self.min_samples = 0
+        self.option = "min_samples"
+        self.param = 0
         self.data = None
         self.n_clusters = 0
     
-    def run(self, data, m, threads):
-        self.min_samples = int(m)
+    def run(self, data, option, m, threads):
+        self.param = int(m)
         self.data = data
+        self.option = option
+        
+        if self.option == "min_samples":
+            hdb = hdbscan.HDBSCAN(min_samples=self.param, core_dist_n_jobs=threads)
+        elif self.option == "min_cluster_size":
+            hdb = hdbscan.HDBSCAN(min_cluster_size=self.param, core_dist_n_jobs=threads)
 
-        hdb = hdbscan.HDBSCAN(min_samples=self.min_samples, core_dist_n_jobs=threads)
- 
         self.labels = hdb.fit_predict(data)
         self.n_clusters = len(set(self.labels)) - 1
         
@@ -60,11 +61,3 @@ class HDBSCANSession(ClusteringSession):
         del hdb
         
         return {'n_clusters': self.n_clusters, 'labels': self.labels.tolist()}
-
-    def save_results(self, location):
-        return super().save_results(location)
-
-    def save_plots(self, location=""):
-        current_directory = location + "RESULTS/HDBSCAN/" + datetime_dir
-        print(current_directory)
-        os.makedirs(current_directory)
