@@ -1,0 +1,27 @@
+{
+    "runs": 50,
+    "data": "../data/luteo-1796-1798.txt",
+
+    "partition":{
+        "column": 3,
+        "range": 6000
+    },
+
+    "sample": 500000,
+
+    "norm":{
+        "method": "feature_scale",
+        "columns":[4,5]
+    },
+
+    "range":[4,12],
+    "plot_cols":[4,5,6,7],
+
+    "algorithms":["hdbscan"],
+    "parameters":{
+        "range": true,
+        "min":[100,1000,100]
+    },
+
+    "threads":16
+}
