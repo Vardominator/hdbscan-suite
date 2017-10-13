@@ -2,6 +2,7 @@ import json
 import subprocess
 import os
 import datetime
+import sys
 
 # DATA PROCESSING AND ANALYSIS
 import pandas as pd
@@ -22,8 +23,12 @@ os.makedirs(current_directory)
 with open('config.json', 'r') as f:
     config = json.load(f)
 
+# CHECK IF DATASET EXISTS
+if not os.path.exists(config['data']):
+    print("Dataset does not exist. Check the path and try again.")
+    sys.exit()
 
-stats_dir = current_directory + '/statistics'
+stats_dir = '{}/statistics'.format(current_directory)
 if not os.path.exists(stats_dir):
     os.makedirs(stats_dir)
 

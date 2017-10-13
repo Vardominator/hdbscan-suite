@@ -1,19 +1,3 @@
-"""
-    Clustering suite launching point
-
-    Used with Anaconda distro of Python 3.6
-    
-    1. Activate Anaconda environment: source activate SorinLab_env
-    2. Install following packages using pip while environment is active
-        a. numpy
-        b. cython
-        c. scikit-learn
-        d. matplotlib
-        e. seaborn
-        f. hdbscan
-
-"""
-
 # HELPER CLASSES
 import Normalizer as norm
 import Clustering
