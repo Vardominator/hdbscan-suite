@@ -45,7 +45,6 @@ if config['parameters']['range'] is True:
 with open(stats_dir + '/hdbscan_multirun_results.csv', 'w') as f:
     f.write(','.join([str(m) for m in vals]) + '\n')
 
-
 # RUN SUBPROCESSES AND WRITE TO FILE
 for run in range(config['runs']):
     print('run: {}'.format(run))
