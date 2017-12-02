@@ -1,0 +1,119 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Clustering.py	../Clustering.py	1;"	kind:file	line:1
+ClusteringSession	../Clustering.py	/^class ClusteringSession(object):$/;"	kind:class	line:29
+HDBSCANSession	../Clustering.py	/^class HDBSCANSession(ClusteringSession):$/;"	kind:class	line:34
+Normalize	../Normalizer.py	/^def Normalize(dataframe, method, cols):$/;"	kind:function	line:7
+Normalizer.py	../Normalizer.py	1;"	kind:file	line:1
+Partitioner	../Partitioner.py	/^class Partitioner:$/;"	kind:class	line:7
+Partitioner.py	../Partitioner.py	1;"	kind:file	line:1
+__init__	../Clustering.py	/^    def __init__(self):$/;"	kind:member	line:35
+args	../hdbscan_runner.py	/^args = parser.parse_args()$/;"	kind:variable	line:66
+args_dict	../hdbscan_runner.py	/^args_dict = vars(args)$/;"	kind:variable	line:67
+average_constant	../Normalizer.py	/^def average_constant(dataframe, cols):$/;"	kind:function	line:18
+average_constant_special	../Normalizer.py	/^def average_constant_special(dataframe, L2Thresh, TertiaryThresh):$/;"	kind:function	line:22
+best_results	../hdbscan_runner.py	/^best_results = []$/;"	kind:variable	line:100
+bounds	../hdbscan_runner.py	/^        bounds = list(map(int, args.fplots.split(',')))$/;"	kind:variable	line:139
+bounds	../hdbscan_runner.py	/^        bounds = list(range(bounds[0], bounds[1] + 1))$/;"	kind:variable	line:141
+bounds	../hdbscan_runner.py	/^    bounds = list(map(int, args.frange.split(',')))$/;"	kind:variable	line:91
+centers	../TEST/local_kmeans.py	/^centers = kmeans.cluster_centers_$/;"	kind:variable	line:18
+cluster_colors	../hdbscan_runner.py	/^    cluster_colors = labels_to_colors(results['labels'])    $/;"	kind:variable	line:143
+clusters	../TEST/spark_kmeans.py	/^        clusters = KMeans.train(parsed_data, n_clusters, maxIterations=100)$/;"	kind:variable	line:16
+color	../TEST/local_kmeans.py	/^            color='r')$/;"	kind:variable	line:21
+column	../hdbscan_runner.py	/^    column = partition_arg[0]$/;"	kind:variable	line:85
+config	../hdbscan_suite.py	/^    config = json.load(f)$/;"	kind:variable	line:24
+create_plots	../hdbscan_runner.py	/^def create_plots(dataframe, bounds, param_dir, cluster_colors):$/;"	kind:function	line:31
+current_dir	../hdbscan_runner.py	/^current_dir = ''$/;"	kind:variable	line:101
+current_dir	../hdbscan_runner.py	/^current_dir = 'RESULTS\/{}'.format(args.datetime)$/;"	kind:variable	line:109
+current_directory	../Clustering.py	/^current_directory = ""$/;"	kind:variable	line:26
+current_directory	../hdbscan_suite.py	/^current_directory = "RESULTS\/" + datetime_dir$/;"	kind:variable	line:19
+current_run	../hdbscan_runner.py	/^    current_run = {'min':min_val, 'results': results}$/;"	kind:variable	line:132
+dataframe	../hdbscan_runner.py	/^    dataframe = Partitioner().sample(dataframe, args.sample)$/;"	kind:variable	line:74
+dataframe	../hdbscan_runner.py	/^    dataframe = Partitioner().select_by_column(dataframe, bounds)$/;"	kind:variable	line:92
+dataframe	../hdbscan_runner.py	/^    dataframe = Partitioner().select_by_time(dataframe, rows[0], int(column))$/;"	kind:variable	line:87
+dataframe	../hdbscan_runner.py	/^    dataframe = norm.Normalize(dataframe, norm_cols_str[0], norm_cols)$/;"	kind:variable	line:80
+dataframe	../hdbscan_runner.py	/^dataframe = pd.read_csv(args.data, sep='\\s+', header=None)$/;"	kind:variable	line:70
+dateTime	../Clustering.py	/^dateTime = str(now.strftime("%Y-%m-%d  %H:%M:%S"))$/;"	kind:variable	line:22
+datetime_dir	../Clustering.py	/^datetime_dir = str(now.strftime("%Y-%m-%d__%H-%M-%S"))$/;"	kind:variable	line:23
+datetime_dir	../hdbscan_suite.py	/^datetime_dir = str(now.strftime("%H-%M-%S__%Y-%m-%d"))$/;"	kind:variable	line:18
+description	../hdbscan_runner.py	/^    description='Welcome to the super duper awesome clustering suite!'$/;"	kind:variable	line:45
+df	../TEST/hdbscan_trial_plot.py	/^df = pd.read_csv('hdbscan_results.csv')$/;"	kind:variable	line:5
+df	../hdbscan_suite.py	/^    df = pd.read_csv(stats_dir + '\/hdbscan_multirun_results.csv')$/;"	kind:variable	line:87
+df_mean	../TEST/hdbscan_trial_plot.py	/^df_mean = df.mean()$/;"	kind:variable	line:7
+df_mean	../hdbscan_suite.py	/^    df_mean = df.mean()$/;"	kind:variable	line:90
+df_std	../TEST/hdbscan_trial_plot.py	/^df_std = df.std()$/;"	kind:variable	line:8
+df_std	../hdbscan_suite.py	/^    df_std = df.std()$/;"	kind:variable	line:91
+end_time	../TEST/spark_kmeans.py	/^        end_time = time.time()$/;"	kind:variable	line:17
+end_time	../hdbscan_runner.py	/^end_time = time.time()$/;"	kind:variable	line:149
+feature_scale	../Normalizer.py	/^def feature_scale(dataframe, cols):$/;"	kind:function	line:14
+final_results	../hdbscan_runner.py	/^final_results = {'datetime': str(now), 'paramruns': []}$/;"	kind:variable	line:99
+function_map	../Normalizer.py	/^function_map = {'standard_score': standard_score,$/;"	kind:variable	line:27
+hdbscan_runner.py	../hdbscan_runner.py	1;"	kind:file	line:1
+hdbscan_runs	../hdbscan_runner.py	/^hdbscan_runs = final_results['paramruns']$/;"	kind:variable	line:164
+hdbscan_suite.py	../hdbscan_suite.py	1;"	kind:file	line:1
+hdbscan_trial_plot.py	../TEST/hdbscan_trial_plot.py	1;"	kind:file	line:1
+kmeans	../TEST/local_kmeans.py	/^kmeans = KMeans(n_clusters=20, init='k-means++', n_init=5).fit(luteo_data)$/;"	kind:variable	line:17
+kmeans_comparison_plots.py	../TEST/kmeans_comparison_plots.py	1;"	kind:file	line:1
+label	../TEST/kmeans_comparison_plots.py	/^            label='Local Runs')$/;"	kind:variable	line:21
+label	../TEST/kmeans_comparison_plots.py	/^            label='Spark Runs')$/;"	kind:variable	line:23
+labels_to_colors	../hdbscan_runner.py	/^def labels_to_colors(labels):$/;"	kind:function	line:26
+local_kmeans.py	../TEST/local_kmeans.py	1;"	kind:file	line:1
+local_times	../TEST/kmeans_comparison_plots.py	/^local_times = [line.split() for line in local_times_data]$/;"	kind:variable	line:15
+local_times_data	../TEST/kmeans_comparison_plots.py	/^    local_times_data = local_times_file.readlines()$/;"	kind:variable	line:10
+luteo	../TEST/luteo_sampler.py	/^luteo = pd.read_csv('luteo-1796-1798.txt', '\\t')$/;"	kind:variable	line:15
+luteo_data	../TEST/local_kmeans.py	/^luteo_data = luteo_data[['rmsd', 'NC']]$/;"	kind:variable	line:11
+luteo_data	../TEST/local_kmeans.py	/^luteo_data = pd.read_csv('luteo_clean.csv')$/;"	kind:variable	line:10
+luteo_data	../TEST/spark_kmeans.py	/^luteo_data = sc.textFile('\/final_project\/luteo_clean.csv')$/;"	kind:variable	line:10
+luteo_sampled	../TEST/luteo_sampler.py	/^luteo_sampled = luteo.sample(sample_count)$/;"	kind:variable	line:18
+luteo_sampler.py	../TEST/luteo_sampler.py	1;"	kind:file	line:1
+min_dir	../hdbscan_runner.py	/^    min_dir = '{}\/min_{}'.format(run_dir, int(min_val))$/;"	kind:variable	line:127
+min_samples	../TEST/hdbscan_trial_plot.py	/^min_samples = list(map(int, list(df.columns)))$/;"	kind:variable	line:6
+min_samples	../hdbscan_suite.py	/^    min_samples = list(map(int, list(df.columns)))$/;"	kind:variable	line:89
+n_clus	../hdbscan_runner.py	/^n_clus = [run['results']['n_clusters'] for run in hdbscan_runs]$/;"	kind:variable	line:167
+n_clusters	../hdbscan_suite.py	/^    n_clusters = str(proc.stdout.readline().rstrip(), 'utf-8')$/;"	kind:variable	line:81
+norm_cols	../hdbscan_runner.py	/^    norm_cols = list(map(int, norm_cols_str[1:]))$/;"	kind:variable	line:79
+norm_cols_str	../hdbscan_runner.py	/^    norm_cols_str = args.norm.split(',')$/;"	kind:variable	line:78
+now	../Clustering.py	/^now = datetime.datetime.now()$/;"	kind:variable	line:21
+now	../hdbscan_runner.py	/^now = datetime.datetime.now()$/;"	kind:variable	line:98
+now	../hdbscan_suite.py	/^now = datetime.datetime.now()$/;"	kind:variable	line:17
+params	../hdbscan_suite.py	/^    params = config['parameters']['min']$/;"	kind:variable	line:43
+params	../hdbscan_suite.py	/^params = []$/;"	kind:variable	line:40
+parsed_data	../TEST/spark_kmeans.py	/^parsed_data = luteo_data.map(lambda line: array([float(x) for x in line.split(',')])).cache()$/;"	kind:variable	line:11
+parser	../hdbscan_runner.py	/^parser = argparse.ArgumentParser($/;"	kind:variable	line:44
+partition_arg	../hdbscan_runner.py	/^    partition_arg = args.part.split(',')$/;"	kind:variable	line:84
+proc	../hdbscan_suite.py	/^    proc = subprocess.Popen([$/;"	kind:variable	line:51
+remove_all_bookkeeping	../Partitioner.py	/^    def remove_all_bookkeeping(dataframe, remove_native_contacts=False):$/;"	kind:member	line:25
+results	../hdbscan_runner.py	/^    results = session.run(dataframe, args.option, min_val, args.threads)$/;"	kind:variable	line:130
+results_json	../hdbscan_runner.py	/^    results_json = json.load(j)$/;"	kind:variable	line:157
+results_json	../hdbscan_runner.py	/^results_json = {}$/;"	kind:variable	line:155
+rows	../hdbscan_runner.py	/^    rows = list(map(int, partition_arg[1:]))$/;"	kind:variable	line:86
+run	../Clustering.py	/^    def run(self, data, option, m, threads):$/;"	kind:member	line:42
+run	../Clustering.py	/^    def run(self, option, params, threads):$/;"	kind:member	line:30
+run_dir	../hdbscan_runner.py	/^run_dir = 'RESULTS\/{}\/run_{}'.format(args.datetime, args.runcount)$/;"	kind:variable	line:110
+s	../TEST/local_kmeans.py	/^            s=10)$/;"	kind:variable	line:15
+s	../TEST/local_kmeans.py	/^            s=40,$/;"	kind:variable	line:20
+sample	../Partitioner.py	/^    def sample(dataframe, sample_size):$/;"	kind:member	line:32
+sample_count	../TEST/luteo_sampler.py	/^sample_count = 10000$/;"	kind:variable	line:12
+select_by_clone	../Partitioner.py	/^    def select_by_clone(dataframe, cloneNumber):$/;"	kind:member	line:20
+select_by_column	../Partitioner.py	/^    def select_by_column(dataframe, bounds):$/;"	kind:member	line:36
+select_by_project	../Partitioner.py	/^    def select_by_project(dataframe, projectNumber):$/;"	kind:member	line:10
+select_by_run	../Partitioner.py	/^    def select_by_run(dataframe, runNumber):$/;"	kind:member	line:15
+select_by_time	../Partitioner.py	/^    def select_by_time(dataframe, startime, timecolumn, endtime=1000000):$/;"	kind:member	line:41
+session	../hdbscan_runner.py	/^session = Clustering.HDBSCANSession()$/;"	kind:variable	line:118
+spark_kmeans.py	../TEST/spark_kmeans.py	1;"	kind:file	line:1
+spark_times	../TEST/kmeans_comparison_plots.py	/^spark_times = [line.split() for line in spark_times_data]$/;"	kind:variable	line:16
+spark_times_data	../TEST/kmeans_comparison_plots.py	/^    spark_times_data = spark_times_file.readlines()$/;"	kind:variable	line:13
+standard_score	../Normalizer.py	/^def standard_score(dataframe, cols):$/;"	kind:function	line:10
+start_time	../TEST/spark_kmeans.py	/^        start_time = time.time()$/;"	kind:variable	line:15
+start_time	../hdbscan_runner.py	/^start_time = time.time()$/;"	kind:variable	line:115
+stats	../hdbscan_runner.py	/^stats = {}$/;"	kind:variable	line:165
+stats_dir	../hdbscan_runner.py	/^stats_dir = 'RESULTS\/{}\/{}'.format(args.datetime, 'statistics')$/;"	kind:variable	line:108
+stats_dir	../hdbscan_suite.py	/^stats_dir = '{}\/statistics'.format(current_directory)$/;"	kind:variable	line:31
+vals	../hdbscan_runner.py	/^    vals = np.arange(vals[0], vals[1] + vals[2], vals[2])$/;"	kind:variable	line:123
+vals	../hdbscan_runner.py	/^vals = list(map(float, args.min.split(',')))$/;"	kind:variable	line:121
+vals	../hdbscan_suite.py	/^    vals = list(np.arange(params[0], params[1] + params[2], params[2]))$/;"	kind:variable	line:44
+vals	../hdbscan_suite.py	/^vals = []$/;"	kind:variable	line:41

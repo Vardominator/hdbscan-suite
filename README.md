@@ -10,3 +10,7 @@
 
 ## RANDOM NOTES
 * min_cluster_size must be greater than 1
+
+## INSTALLATION INSTRUCTIONS
+* pip install numpy
+* pip install -r requirementst.txt
