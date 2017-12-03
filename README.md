@@ -55,5 +55,19 @@ Using the table below, set the parameters in config.json as desired.
 | parameters:min | Range or set of values to be used for each run. [2,10,1] will use parameters from 2 to 10 in steps of 1 if  range is set to true. [2,5,10,30] will use parameters 2,5,10, and 30. | [2,10,1] |
 | threads | Number of threads to use within HDBSCAN algorithm | 4 |
 
+Make sure environment is active.
+```
+source [environment]/bin/activate
+```
+
+Run the suite.
+```
+python hdbscan_suite.py
+```
+
+Results will be stored in RESULTS/[starting time and date]/*
+
+Log will be stored in LOGS/[starting time and date].log
+
 ## Resources
-Open-source HDBSCAN extenstion to Python's scikit-learn machine learning library
+[Open-source HDBSCAN extenstion to Python's scikit-learn machine learning library](https://github.com/scikit-learn-contrib/hdbscan)
