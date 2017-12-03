@@ -258,3 +258,4 @@ randomnotes.md
 __pycache__
 .cache
 tags
+.vscode
