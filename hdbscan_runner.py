@@ -106,6 +106,7 @@ vals = list(map(float, args.min.split(',')))
 if args.range:
     vals = np.arange(vals[0], vals[1] + vals[2], vals[2])
 
+logging.info(len(dataframe))
 # RUN HDBSCAN FOR EVERY PARAMETER
 for min_val in list(vals):
     min_dir = '{}/min_{}'.format(run_dir, int(min_val))

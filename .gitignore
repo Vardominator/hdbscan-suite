@@ -251,7 +251,10 @@ RESULTS/
 LOGS/
 TEST/
 
+randomnotes.md
+
 # Compiled python
 *.pyc
 __pycache__
 .cache
+tags

@@ -66,7 +66,7 @@ for run in range(config['runs']):
         '-d',
         str(config['data']),
         '-P',
-        '{},{}'.format(config['partition']['column'], config['partition']['range']),
+        '{},{}'.format(config['partition']['column'], config['partition']['start']),
         '-s',
         str(config['sample']),
         '-N',
