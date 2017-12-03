@@ -38,11 +38,8 @@ class Partitioner:
         return partitioned_data
 
     @staticmethod
-    def select_by_time(dataframe, startime, timecolumn, endtime=1000000):
-        # dataframe = dataframe.loc[dataframe['Time'] >= startTime]
-        # ix = dataframe.index[dataframe[:, timecolumn] >= startime][:]
+    def select_by_time(dataframe, startime, timecolumn):
         ix_true = dataframe.index[dataframe.iloc[:, timecolumn] > startime]
-        # print(list(ix_true.values))
         temp_df = dataframe
         temp_df.columns = list(map(str, range(len(dataframe.iloc[0,:]))))
         partitioned_data = dataframe.loc[dataframe[str(timecolumn)] >= startime]
