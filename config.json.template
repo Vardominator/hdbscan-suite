@@ -4,7 +4,7 @@
 
     "partition":{
         "column": 3,
-        "range": 6000
+        "start": 6000
     },
 
     "sample": 10000,
