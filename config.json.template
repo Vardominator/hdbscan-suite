@@ -1,5 +1,5 @@
 {
-    "runs": 3,
+    "runs": 10,
     "data": "data/luteo-1796-1798.txt",
 
     "partition":{
@@ -7,7 +7,7 @@
         "range": 6000
     },
 
-    "sample": 1000,
+    "sample": 10000,
 
     "norm":{
         "method": "feature_scale",
@@ -15,7 +15,6 @@
     },
 
     "range":[4,12],
-    "plot_cols":[4,5,6,7],
 
     "parameters":{
         "range": true,

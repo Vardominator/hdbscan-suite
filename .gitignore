@@ -248,6 +248,7 @@ ModelManifest.xml
 config.json
 data/
 RESULTS/
+LOGS/
 TEST/
 
 # Compiled python
