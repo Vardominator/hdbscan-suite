@@ -50,9 +50,10 @@ Using the table below, set the parameters in config.json as desired.
 | sample | Sample size of the dataset. Set 0 to use entire dataset post partition | 12000 |
 | norm:method | Desired method for normalization. Available methods: [standard_score](https://en.wikipedia.org/wiki/Standard_score), [feature_scale](https://en.wikipedia.org/wiki/Feature_scaling) | "feature_scale" |
 | norm:columns | Columns to be normalized (ex. [4,5,10]) | [4,5] |
-| range | Columns to be included in the clustering, starting at 0 | [4,12] (columns 4 through 12 will be used in clustering ) | parameters:range | Whether or the set of desired parameters are a range. Set to false if running with individual values | true |
+| range | Columns to be included in the clustering, starting at 0 | [4,12] (columns 4 through 12 will be used in clustering) |
+| parameters:range | If set of desired parameters are a range. Set to false if running with individual values | true |
 | parameters:option | Cluster criterion, minimum cluster size or minimum sample size. Look below for more information. | "min_cluster_size" |
-| parameters:min | Range or set of values to be used for each run. [2,10,1] will use parameters from 2 to 10 in steps of 1 if  range is set to true. [2,5,10,30] will use parameters 2,5,10, and 30. | [2,10,1] |
+| parameters:min | Range or set of values to be used for each run. [2,10,1] will use parameters from 2 to 10 in steps of 1 if range is set to true. [2,5,10,30] will use parameters 2,5,10, and 30. | [2,10,1] |
 | threads | Number of threads to use within HDBSCAN algorithm | 4 |
 
 Make sure environment is active.
