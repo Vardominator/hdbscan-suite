@@ -14,12 +14,12 @@ sudo apt-get install python3-virtualenv
 ```
 
 ## Installation
-Go to desired directory and create a virtual environment.
+Navigate to desired directory and create a virtual environment.
 IMPORTANT: Make sure to set the default interpreter as python3.
 ```
 virtualenv -p python3 --no-site-packages [desired environment name]
 ```
-Go into the environment directory and activate the environment.
+Navigate to environment directory and activate the environment.
 ```
 cd [environment]
 source bin/activate
