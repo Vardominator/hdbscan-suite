@@ -5,13 +5,8 @@ Clustering suite designed to run HDBSCAN on a dataset multiple times with multip
 For each run, HDBSCAN will be performed on the dataset with each parameter. The results for each run will be accumulated and stored in its respective directory.
 
 ## Prerequisites
-Install git, python3.5+, python3-pip and python3-virtualenv if necessary.
-```
-sudo apt-get install git
-sudo apt-get install python3
-sudo apt-get install python3-pip
-sudo apt-get install python3-virtualenv
-```
+* python3.5+
+* pip 10.0+
 
 ## Installation
 Navigate to desired directory and create a virtual environment.
